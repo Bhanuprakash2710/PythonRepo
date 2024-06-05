@@ -23,7 +23,7 @@ stages:
         containerRegistry: 'python-task-repo'
         repository: 'python-push-to-acr'
         command: 'buildAndPush'
-        Dockerfile: '**/Dockerfile'
+        Dockerfile: '**/dockerfile'
         tags: 
           $(tag)
           $(Build.SourceVerison)
