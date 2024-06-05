@@ -21,7 +21,7 @@ stages:
     - task: Docker@2
       inputs:
         containerRegistry: 'python-task-repo'
-        repository: 'python-push-to-acr'
+        repository: 'pythonpushtoacr'
         command: 'buildAndPush'
         Dockerfile: '**/dockerfile'
         tags: 
