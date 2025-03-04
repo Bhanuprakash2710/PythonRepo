@@ -30,10 +30,10 @@ metadata:
     app: python-app
     tier: frontend  
 spec:
-  type: LoadBalancer 
+  type: NodePort
   selector:
     app: python-app
   ports: 
     - name: http
       port: 5000 
-      targetPort: 5000
+      
